@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>OnScreen_Keyboard</title>
+        <script src="keyboard.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="keyboard.css" rel="stylesheet">
+    </head>
+    <body>
+            
+            <div class="keyboard">
+                <h6 >On-Screen Keyboard</h6>
+                
+                <div class="but">
+                            <div id="display">
+                            <textarea  id="disp" ></textarea>
+                            <p>Click on the text area to view Keyboard</p>
+                            </div>
+                            
+                        <br>
+                        <div class="buton">
+                                <button class="butt" value="`" onclick="valuen(this)"><sup>~</sup><sub>`</sub></button>
+                                <button class="butt" value="1" onclick="valuen(this)">1<sup>!</sup></button>
+                                <button class="butt" value="2" onclick="valuen(this)">2<sup>@</sup></button>
+                                <button class="butt" value="3" onclick="valuen(this)">3<sup>#</sup></button>
+                                <button class="butt" value="4" onclick="valuen(this)">4<sup>$</sup></button>
+                                <button class="butt" value="5" onclick="valuen(this)">5<sup>%</sup></button>
+                                <button class="butt" value="6" onclick="valuen(this)">6<sup>^</sup></button>
+                                <button class="butt" value="7" onclick="valuen(this)">7<sup>&</sup></button>
+                                <button class="butt" value="8"onclick="valuen(this)" >8<sup>*</sup></button>
+                                <button class="butt" value="9" onclick="valuen(this)">9<sup>(</sup></button>
+                                <button class="butt" value="0" onclick="valuen(this)">0<sup>)</sup></button>
+                                <button value="-" class="butt"  onclick="valuen(this)">_<sup>-</sup></button>
+                                <button class="butt" value="+" onclick="valuen(this)"><sub>+</sub><sup>=</sup></button>
+                                <button title="Backspace" class="butt" value="back" onclick="back()">Backspace</button>
+                                <br>
+                                
+                                <button class="butt" style="width:13%" value="Tab" onclick="valuek(this)">Tab</button>
+                                <button class="butt" value="q" onclick="valuek(this)">Q</button>
+                                <button class="butt" value="w" onclick="valuek(this)">W</button>
+                                <button class="butt" value="e" onclick="valuek(this)">E</button>
+                                <button class="butt" value="r"onclick="valuek(this)">R</button>
+                                <button class="butt" value="t" onclick="valuek(this)">T</button>
+                                <button class="butt" value="y"onclick="valuek(this)">Y</button>
+                                <button class="butt" value="u" onclick="valuek(this)">U</button>
+                                <button class="butt" value="i"onclick="valuek(this)">I</button>
+                                <button class="butt" value="o"onclick="valuek(this)">O</button>
+                                <button class="butt" value="p"onclick="valuek(this)">P</button>
+                                <button class="butt" value="["onclick="valuen(this)"><sup>{ </sup> [</button>
+                                <button class="butt" value="]"onclick="valuen(this)"><sup>} </sup> ]</button>
+                                <button class="butt" value= "\"onclick="valuen(this)"><sup>|</sup>\</button><br>
+                                <button class="capl butt" value="Caps" id="cap">Capslock</button>
+
+                                
+                                <button class="butt" value="a" onclick="valuek(this)">A</button>
+                                <button class="butt" value="s"onclick="valuek(this)" >S</button>
+                                <button class="butt"  value="d" onclick="valuek(this)">D</button>
+                                <button  class="butt" value="f"onclick="valuek(this)">F</button>
+                                <button  class="butt"value="g" onclick="valuek(this)"> G</button>
+                                <button  class="butt" value="h"onclick="valuek(this)">H</button>
+                                <button  class="butt" value="j"onclick="valuek(this)">J</button>
+                                <button  class="butt" value="k"onclick="valuek(this)">K</button>
+                                <button  class="butt" value="l"onclick="valuek(this)">L</button>
+                                <button class="butt" value=";" onclick="valuen(this)"><sub>; </sub>|<sup> :</sup></button>
+                                <button class="butt" value="'" onclick="valuen(this)"><sub>'</sub> <sup> "</sup></button>
+                                <button  class="butt"value="Enter" style="width:13%" onclick="valuek(this)">Enter</button><br>
+                                <button  class="shiftl shift butt" style="width:15%" >Shift</button>
+                                <button class="butt" value="z"onclick="valuek(this)">Z</button>
+                                <button class="butt" value="x"onclick="valuek(this)">X</button>
+                                <button class="butt" value="c"onclick="valuek(this)">C</button>
+                                <button class="butt"value="v" onclick="valuek(this)">V</button>
+                                <button class="butt" value="b"onclick="valuek(this)">B</button>
+                                <button class="butt"value="n" onclick="valuek(this)">N</button>
+                                <button class="butt"value="m" onclick="valuek(this)">M</button>
+                                <button class="butt" value="<" onclick="valuen(this)">&LT;<sub>,</sub></button>
+                                <button class="butt" value=">"onclick="valuen(this)">&GT;<sub>.</sub></button>
+                                <button class="butt" value="/" onclick="valuen(this)">?<sub>/</sub></button>
+                                <button class="shiftr shift butt" class="butt" style="width:15%" > Shift</button>
+                                <br>
+                                <button onclick="control()" style="width:10%" class="butt" >Ctrl</button>
+                                <button class="lfn butt" >Fn</button>
+                                <button class="butt" onclick=window.close()>Alt</button>
+                                <button  class="butt" value="space" onclick="valuek(this)">Space_________________Key</button>
+                                <button onclick=window.close() class="butt">AltGr</button>
+                                <button class="rfn butt">Fn</button>
+                                <button onclick="control()" style="width:10%" class="butt">Ctrl</button>
+                                <br>
+                                <button class="butt" style="width:10%;margin-left:15%" onclick="disapp()" >Clear</button>
+
+                                <button class="butt" onclick="de()" style="margin-left:15%;">Delete-></button>
+                                <button class="butt" onclick="capitali()" style="margin-left:15%;">Capitalize</button>
+                            
+                                </div>
+                    </div>
+            </div>
+           
+            
+        
+    </body>
+</html>
